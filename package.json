@@ -1,0 +1,14 @@
+{
+  "name": "ngeuropeinvader",
+  "version": "1.0.0",
+  "description": "ngEuropeInvader: An Ionic project",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "http-server": "^0.10.0"
+  },
+  "scripts": {
+    "setup": "npm install && ./node_modules/.bin/bower install",
+    "start": "./node_modules/.bin/http-server src"
+  }
+}

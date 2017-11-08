@@ -1,0 +1,16 @@
+{
+  "name": "ng-europe-invader",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "lodash": "~2.4.1",
+    "angular-motion": "0.3.4",
+    "pusher": "2.2.3",
+    "angular-pusher": "0.0.13",
+    "ionic": "1.0.0-beta.13",
+    "angular-google-maps": "2.0.5",
+    "bluebird": "~2.3.6"
+  },
+  "resolutions": {
+    "angular": "~1.2.17"
+  }
+}

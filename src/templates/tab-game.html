@@ -1,0 +1,18 @@
+<ion-view title="INVADERS - SCORE: {{ currentPlayer.score}}">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-navicon" ng-click="pause()"></button>
+    </ion-nav-buttons>
+    <ion-pane class="padding">
+        <ui-gmap-google-map center="map.center" zoom="map.zoom"></ui-gmap-google-map>
+        <inv-game class="game-canvas" data-model="gameSettings">
+            <inv-enemy ng-repeat="e in currentEnemies" data-model="e" data-movement-type="{{movementType}}"
+                       data-delay="{{$index * 600}}" data-start-from="{{startFrom}}" data-index="{{$index}}"
+                       data-enemy-count="{{currentEnemies.length}}"
+                       ng-if="!e.dead"
+                       class="am-fade"></inv-enemy>
+            <inv-missile ng-repeat="m in missiles" ng-if="!m.gone && !m.dead" data-model="m"></inv-missile>
+            <inv-player ng-repeat="p in players" data-model="p" ng-if="!p.dead" class="am-fade"></inv-player>
+        </inv-game>
+    </ion-pane>
+</ion-view>
+
